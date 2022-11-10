@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SymfonyService } from 'src/app/service/symfony.service';
-import { MatDialog, MatDialogConfig, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { ProjectService } from 'src/app/service/project.service';
 
 
 @Component({
@@ -11,7 +10,7 @@ import { MatDialog, MatDialogConfig, MAT_DIALOG_DATA, MatDialogRef } from '@angu
 })
 export class SymfonyComponent implements OnInit {
 
-  constructor(public serviceApi: SymfonyService, private router: Router
+  constructor(public serviceApi: ProjectService, private router: Router
   ) { }
 
   ngOnInit(): void {

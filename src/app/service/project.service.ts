@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Symfony } from '../model/symfony';
+import { Project } from '../model/project';
 import { FormGroup } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SymfonyService {
+export class ProjectService {
   private baseUrl = 'http://localhost:8000/api/projects';
 
-  list !: Symfony[];
+  list !: Project[];
   public formData !: FormGroup;
 
   constructor(private http: HttpClient) { }
