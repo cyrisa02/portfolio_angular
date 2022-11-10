@@ -4,12 +4,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialDesignModule } from './material-design/material-design.module';
-import { SymfonyComponent } from './pages/symfony/symfony.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularComponent } from './pages/angular/angular.component';
 import { WordpressComponent } from './pages/wordpress/wordpress.component';
 import { ProjectitemComponent } from './pages/projectitem/projectitem.component';
+import { SymfonyComponent } from './pages/symfony/symfony.component';
 
 @NgModule({
   declarations: [

@@ -1,18 +1,42 @@
 <div class="flex">
 	<div class="m-auto">
-		<h1>Accueil</h1>
-
-
 		<mat-card class="example-card">
 			<mat-card-title-group>
-				<mat-card-title>Shiba Inu</mat-card-title>
-				<mat-card-subtitle>Large</mat-card-subtitle>
-				<img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+				<mat-card-subtitle>Bonjour, je suis
+				</mat-card-subtitle>
+				<mat-card-title style="margin-bottom: 30px; color:blue;">Cyril Gourdon</mat-card-title>
+
+				<mat-card-title style="margin-bottom: 30px; color:blue;">DEVELOPPEUR BACK-END SYMFONY-ANGULAR</mat-card-title>
+
+
+				<img mat-card-image src="./assets/images/profile.JPG" style="max-width:20rem; border-radius:50%;">
 			</mat-card-title-group>
 			<mat-card-content>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus illo nihil veritatis? Ratione, dolor numquam laboriosam sint excepturi in quasi esse quas. Quaerat iste quas animi commodi itaque tenetur aperiam.
-				<!-- {{longText}} -->
+				Ma formation professionnelle a toujours été guidée par le goût des sciences et des mathématiques, c'est pourquoi j'ai achevé la formation "Développeur web et web mobile". Mon parcours montre que je suis à l'aise au contact des gens. Je suis sensible au respect des demandes de mes clients sous forme de cahier des charges. Je recherche toujours leur satisfaction en respectant la qualité du travail , les délais et la maîtrise des coûts. Mes nombreuses expériences, en France comme à l'international, dans l'industrie chimique et mécanique, dans l'artisanat et le professorat m'ont rendu à l'aise et réactif dans de nombreuses situations.
 			</mat-card-content>
+			<mat-card-actions>
+				<a [routerLink]="['/symfony']" mat-raised-button class="example-spacer" color="primary">Mon  travail</a>
+			</mat-card-actions>
 		</mat-card>
+		<!-- Section About -->
+
+		<h1>A propos</h1>
+		<mat-card class="example-card">
+			<mat-card-title-group>
+				<mat-card-title style="margin-bottom: 30px; ">Grâce au framework Symfony je peux vous apporter et personnaliser de nouvelles fonctionnalités dans votre métier en respectant les critères de sécurité et de fiabilité. Ce qui impliquera de moindres coûts de maintenance.</mat-card-title>
+
+			</mat-card-title-group>
+			<mat-card-content>
+				Vous aurez aussi l'avantage d'avoir accès à un back-office (tableau de bord) personnalisé. Ce genre d'application offre une rapidité d'affichage des pages et peut gérer des liaisons avec d'autres services.
+
+			</mat-card-content>
+			<mat-card-actions>
+				<img src="./assets/images/CYRILGOURDON.pdf">
+			</mat-card-actions>
+		</mat-card>
+
+
+		<!-- Section About -->
+
 	</div>
 </div>
