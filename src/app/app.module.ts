@@ -7,12 +7,16 @@ import { MaterialDesignModule } from './material-design/material-design.module';
 import { SymfonyComponent } from './projet/symfony/symfony.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularComponent } from './pages/angular/angular.component';
+import { WordpressComponent } from './pages/wordpress/wordpress.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SymfonyComponent,
-    HomeComponent
+    HomeComponent,
+    AngularComponent,
+    WordpressComponent
   ],
   imports: [
     BrowserModule,
