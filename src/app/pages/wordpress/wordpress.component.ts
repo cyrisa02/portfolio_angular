@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SymfonyService } from 'src/app/service/symfony.service';
+import { ProjectService } from 'src/app/service/project.service';
 
 @Component({
   selector: 'app-wordpress',
@@ -9,7 +9,7 @@ import { SymfonyService } from 'src/app/service/symfony.service';
 })
 export class WordpressComponent implements OnInit {
 
-  constructor(public serviceApi: SymfonyService, private router: Router) { }
+  constructor(public serviceApi: ProjectService, private router: Router) { }
 
   ngOnInit(): void {
     this.getData();

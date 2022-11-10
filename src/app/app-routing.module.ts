@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AngularComponent } from './pages/angular/angular.component';
 import { HomeComponent } from './pages/home/home.component';
 import { WordpressComponent } from './pages/wordpress/wordpress.component';
-import { SymfonyComponent } from './projet/symfony/symfony.component';
+import { SymfonyComponent } from './pages/symfony/symfony.component';
 
 
 const routes: Routes = [
