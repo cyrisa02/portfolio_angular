@@ -8,7 +8,7 @@ import { SymfonyComponent } from './pages/symfony/symfony.component';
 
 const routes: Routes = [
   { path: "symfony", component: SymfonyComponent },
-  { path: "home", component: HomeComponent },
+  { path: "", component: HomeComponent },
   { path: "angular", component: AngularComponent },
   { path: "wordpress", component: WordpressComponent }
 ];

@@ -10,6 +10,7 @@ import { AngularComponent } from './pages/angular/angular.component';
 import { WordpressComponent } from './pages/wordpress/wordpress.component';
 import { ProjectitemComponent } from './pages/projectitem/projectitem.component';
 import { SymfonyComponent } from './pages/symfony/symfony.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,8 @@ import { SymfonyComponent } from './pages/symfony/symfony.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialDesignModule,
-    HttpClientModule
-
+    HttpClientModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
 	Cyril Gourdon
-	<a [routerLink]="['/home' ]" mat-icon-button class="example-spacer">Accueil</a>
+	<a [routerLink]="['']" mat-icon-button class="example-spacer">Accueil</a>
 
 
 	<a [routerLink]="['/symfony']" mat-icon-button class="example-spacer">Symfony</a>
@@ -19,3 +19,33 @@
 
 
 <router-outlet></router-outlet>
+
+<div class="text-align" style="text-align:center; margin-top:10px;">
+
+	<footer>
+		© 2022 Copyright:
+		<a href="/">
+			Portfolio</a>
+		<div>
+			<strong>Site créé par Cyril Gourdon</strong>
+		</div>
+
+		<p>Téléphone: 06 15 60 33 44</p>
+		<div class="social-links">
+
+			<a href="https://www.linkedin.com/in/cyril-gourdon-web-developpeur-symfony-angular/" class="text-dark me-2 fs-5">
+				<fa-icon [icon]="faLinkedin" class="fa-2xl" style="margin:2rem;"></fa-icon>
+			</a>
+
+			<a href=" https://www.facebook.com/atelierdu.cabriolet/" class=" text-dark ms-4 fs-5">
+				<fa-icon [icon]="faFacebook" class="fa-2xl" style="margin:2rem;"></fa-icon>
+			</a>
+			<a href="https://github.com/cyrisa02" class="text-dark ms-4">
+				<fa-icon [icon]="faGithub" class="fa-2xl" style="margin:2rem;"></fa-icon>
+			</a>
+			<a href="https://www.youtube.com/channel/UCwx0nLuqWHxVly5v_u-ll4Q/videos">
+				<fa-icon [icon]="faYoutube" class="fa-2xl " style="margin:2rem;"></fa-icon>
+			</a>
+		</div>
+	</footer>
+</div>

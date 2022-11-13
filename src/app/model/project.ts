@@ -10,4 +10,5 @@ export class Project {
     isAngular !: boolean;
     isReact !: boolean;
     isWordpress !: boolean;
+    urlpicture!: string;
 }

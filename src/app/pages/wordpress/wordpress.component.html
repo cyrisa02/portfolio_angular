@@ -1,9 +1,16 @@
 <div class="flex">
 	<div class="m-auto">
-		<h1>Liste des projets Wordpress</h1>
+		<div class="text-align" style="text-align:center; margin-top:10px;">
+			<h1>Liste des projets Wordpress</h1>
+		</div>
+
+		<!-- <img mat-card-image src="https://uploads.cyrisa02.fr/portfolio/blog.png"> -->
 
 
-		<div *ngFor='let item of serviceApi.list.slice().reverse()' style="text-align:center">
+		<!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+
+
+		<div *ngFor='let item of serviceApi.list' style="text-align:center">
 
 			<div class="" *ngIf="item.isWordpress">
 				<mat-card class="example-card">
@@ -21,14 +28,20 @@
 						</mat-card-subtitle>
 
 
-						<img mat-card-lg-image src="{{ item.picture }}" style="margin-bottom: 20px">
+						<img mat-card-lg-image [src]="item.urlpicture
+																												" style="margin-bottom: 20px;width:18rem; ">
 
 
 					</mat-card-title-group>
 					<mat-card-content>
 						{{ item.description }}
+
+						<mat-card-content>
+							{{ item.urlpicture }}
+						</mat-card-content>
+
 					</mat-card-content>
-					<mat-card-subtitle><img src="./assets/images/medaillon.png" alt="Cyril Gourdon" style="max-width:3rem; border-radius:50%;">- Cyril Gourdon -
+					<mat-card-subtitle><img src=" ./assets/images/medaillon.png" alt=" cyril Gourdon" style=" max-width:3rem; border-radius:50%;">- Cyril Gourdon -
 
 
 					</mat-card-subtitle>

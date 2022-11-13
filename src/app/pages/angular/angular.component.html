@@ -1,6 +1,8 @@
 <div class="flex">
 	<div class="m-auto">
-		<h1>Liste des projets Angular</h1>
+		<div class="text-align" style="text-align:center; margin-top:10px;">
+			<h1>Liste des projets Angular</h1>
+		</div>
 
 
 		<div *ngFor='let item of serviceApi.list.slice().reverse()' style="text-align:center">
@@ -21,7 +23,7 @@
 						</mat-card-subtitle>
 
 
-						<img mat-card-lg-image src="{{ item.picture }}" style="margin-bottom: 20px">
+						<img mat-card-lg-image [src]="item.urlpicture" style="margin-bottom: 20px; width:18rem; ">
 
 
 					</mat-card-title-group>
