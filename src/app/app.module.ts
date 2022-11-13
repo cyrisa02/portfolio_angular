@@ -11,6 +11,8 @@ import { WordpressComponent } from './pages/wordpress/wordpress.component';
 import { ProjectitemComponent } from './pages/projectitem/projectitem.component';
 import { SymfonyComponent } from './pages/symfony/symfony.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContactComponent } from './pages/contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,15 +21,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     AngularComponent,
     WordpressComponent,
-    ProjectitemComponent
+    ProjectitemComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialDesignModule,
     HttpClientModule,
     FontAwesomeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

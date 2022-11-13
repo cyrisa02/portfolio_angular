@@ -8,7 +8,7 @@ import { FormGroup } from '@angular/forms';
   providedIn: 'root'
 })
 export class ProjectService {
-  private baseUrl = 'http://localhost:8000/api/projects';
+  private baseUrl = 'https://portfolio.cyrisa02.fr/api/projects';
 
   list !: Project[];
   public formData !: FormGroup;
