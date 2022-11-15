@@ -11,23 +11,27 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 
+
+const materialModules = [
+  MatButtonModule,
+  MatCardModule,
+  MatToolbarModule,
+  MatDividerModule,
+  MatListModule,
+  MatProgressSpinnerModule,
+  MatGridListModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSelectModule
+]
+
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-
+    ...materialModules
   ],
-  exports: [
-    MatButtonModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatDividerModule,
-    MatListModule,
-    MatProgressSpinnerModule,
-    MatGridListModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
-  ],
+  exports: [...materialModules],
 })
+
 export class MaterialDesignModule { }
