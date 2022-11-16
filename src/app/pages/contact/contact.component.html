@@ -4,20 +4,20 @@
 
 		<mat-form-field appearance="fill">
 			<mat-label>Nom</mat-label>
-			<input matinput formcontrolname="name">
+			<input matInput formControlName="name">
 		</mat-form-field>
 		<!-- <small *ngIf="contactForm.get()">Le nom est obligatoire 22minutes</small> -->
 
 		<mat-form-field appearance="fill">
 			<mat-label>Email</mat-label>
-			<input matinput [formControlName]="email">
+			<input matInput formControlName="email">
 
 		</mat-form-field>
 
 
 		<mat-form-field appearance="fill">
 			<mat-label>Selections</mat-label>
-			<mat-select formcontrolname="subject">
+			<mat-select formControlName="subject">
 
 
 				<mat-option value="info">Demande d'information</mat-option>
@@ -27,7 +27,7 @@
 
 		<mat-form-field appearance="fill">
 			<mat-label>Message</mat-label>
-			<textarea matinput formcontrolname="message"></textarea>
+			<textarea matInput formControlName="message"></textarea>
 
 		</mat-form-field>
 		<button type="reset " mat-raised-button color="primary" [disabled]="contactForm.invalid" (click)="submitData(contactForm.value)">Envoyer</button>
