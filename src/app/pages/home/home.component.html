@@ -29,67 +29,122 @@
 
 
 <!-- Section About -->
-<div class="text-align">
-	<h1>A propos</h1>
-</div>
-
-<mat-grid-list cols="2" rowheight="1:2">
-	<mat-grid-tile>
-		<mat-card class="example-card">
-			<mat-card-title-group>
-				<mat-card-title>Grâce au framework Symfony je peux vous apporter et personnaliser de nouvelles fonctionnalités dans votre métier en respectant les critères de sécurité et de fiabilité. Ce qui impliquera de moindres coûts de maintenance.</mat-card-title>
-
-			</mat-card-title-group>
-			<mat-card-content>
-				Vous aurez aussi l'avantage d'avoir accès à un back-office (tableau de bord) personnalisé. Ce genre d'application offre une rapidité d'affichage des pages et peut gérer des liaisons avec d'autres services.
-
-			</mat-card-content>
-			<mat-card-actions>
-				<a href="/assets/images/CYRILGOURDON.pdf" target="_blank" mat-raised-button class="example-spacer" color="primary">Mon  CV</a>
-
-				<div class="social-links">
-					<a href="https://www.linkedin.com/in/cyril-gourdon-web-developpeur-symfony-angular/" class="text-dark me-2 fs-5">
-						<fa-icon [icon]="faLinkedin" class="fa-2xl" style="margin:2rem;"></fa-icon>
-					</a>
-
-					<a href=" https://www.facebook.com/atelierdu.cabriolet/" class=" text-dark ms-4 fs-5">
-						<fa-icon [icon]="faFacebook" class="fa-2xl" style="margin:2rem;"></fa-icon>
-					</a>
-					<a href="https://github.com/cyrisa02" class="text-dark ms-4">
-						<fa-icon [icon]="faGithub" class="fa-2xl" style="margin:2rem;"></fa-icon>
-					</a>
-					<a href="https://www.youtube.com/channel/UCwx0nLuqWHxVly5v_u-ll4Q/videos">
-						<fa-icon [icon]="faYoutube" class="fa-2xl " style="margin:2rem;"></fa-icon>
-					</a>
+<section class="about bg-white py-5" id="about">
+	<div class="container-lg py-4">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 ">
+				<div class="section-title text-center">
+					<h2 class="fw-bold mb-5">A propos</h2>
 				</div>
-			</mat-card-actions>
-		</mat-card>
-	</mat-grid-tile>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="about-text">
+					<h3 class="fs-4 mb-3">Grâce au framework Symfony je peux vous apporter et personnaliser de nouvelles fonctionnalités dans votre métier en respectant les critères de sécurité et de fiabilité. Ce qui impliquera de moindres coûts de maintenance.
+					</h3>
 
-	<mat-grid-tile>
-		<mat-card class="example-card">
-			<mat-card-title-group>
-				<mat-card-title style="margin-bottom: 30px; ">Ces applications sont responsives et respectent le concept de "Mobile First".</mat-card-title>
-			</mat-card-title-group>
-			<mat-card-content>
-				A l'aide d'outil comme Figma, je réalise les wireframes, zoning et mockup de mes applications en Mobile First.
-			</mat-card-content>
-			<mat-card-actions></mat-card-actions>
-		</mat-card>
-	</mat-grid-tile>
-
-</mat-grid-list>
+					<p class="text-muted">Vous aurez aussi  l'avantage d'avoir accès à un back-office (tableau de bord) personnalisé. Ce genre d'application offre une rapidité d'affichage des pages et peut gérer des liaisons avec d'autres services.
+					</p>
 
 
+				</div>
+				<div class="row">
+					<div class="col-lg-12 d-flex align-items-center">
+						<a href="/assets/images/CYRILGOURDON.pdf" target="_blank" class="btn btn-secondary me-5 px-3">Mon CV</a>
+
+						<div class="social-links">
+							<a href="https://www.linkedin.com/in/cyril-gourdon-web-developpeur-symfony-angular/" class="text-dark me-2 fs-5">
+
+								<fa-icon [icon]="faLinkedin" class="fa-2xl text-dark ms-4"></fa-icon>
+
+
+							</a>
+
+							<a href=" https://www.facebook.com/atelierdu.cabriolet/" class=" text-dark ms-4 fs-5">
+
+								<fa-icon [icon]="faFacebook" class="fa-2xl text-dark ms-4"></fa-icon>
+
+
+							</a>
+							<a href="https://github.com/cyrisa02" class="text-dark ms-4">
+								<fa-icon [icon]="faGithub" class="fa-2xl text-dark ms-4"></fa-icon>
+							</a>
+							<a href="https://www.youtube.com/channel/UCwx0nLuqWHxVly5v_u-ll4Q/videos">
+								<fa-icon [icon]="faYoutube" class="fa-2xl text-dark ms-4"></fa-icon>
+							</a>
+
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-md-6">
+				<div class="about-text">
+					<h3>Ces applications sont responsives et respectent le concept de "Mobile First".</h3>
+
+					<p>A l'aide d'outil comme Figma, je réalise les wireframes, zoning et mockup de mes applications en Mobile First.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <!-- Section About End-->
 
 
 <!-- Section Prestations Start -->
+<section class="services py-5 bg-white" id="services">
+	<div class="container-lg py-4">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 ">
+				<div class="section-title text-center">
+					<h2 class="fw-bold mb-5">Prestations</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="service-item shadow-sm p-4 rounded bg-white">
+					<div class="icon my-3 text-secondary fs-2">
+						<fa-icon [icon]="faLaptopCode" class="fa-2xl"></fa-icon>
+					</div>
+					<h3 class="fs-5 py-2">Développement Web</h3>
+					<p class="text-muted">Pour une meilleure maintenabilité et un bon fonctionnement des applications, j'intègre dans mes projets une série de tests automatisés (unitaires, d'intégration, système). Avec Git, vous pourrez mener des projets modernes en collaboration, en gérant les mises à jour pour vous faire gagner du temps sur le développement.
+					</p>
 
-<div class="text-align">
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="service-item shadow-sm p-4 rounded bg-white">
+					<div class="icon my-3 text-secondary fs-2">
+						<fa-icon [icon]="faLightbulb" class="fa-2xl"></fa-icon>
+
+					</div>
+					<h3 class="fs-5 py-2">AGILE/SCRUM</h3>
+					<p class="text-muted">Pour mener au mieux mes projets, j'apprécie de travailler en mode AGILE/SCRUM, ce qui me permet de mieux répondre à l'attente et aux exigences de mes clients, c'est ce que j'appelle le concept de l' "amélioration continue".</p>
+
+
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="service-item shadow-sm p-4 rounded bg-white">
+					<div class="icon my-3 text-secondary fs-2">
+						<fa-icon [icon]="faLaptop" class="fa-2xl"></fa-icon>
+
+					</div>
+					<h3 class="fs-5 py-2">Docker et déploiement</h3>
+					<p class="text-muted">Pour certains de mes projets Symfony je mets en oeuvre Docker (& docker-compose). Après avoir utilisé les services d'Heroku, je déploie mes applications sur un VPS Ionos. Je me suis intéressé à configurer EC2 d'AWS.
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section><!-- Old --><div class="text-align">
 	<h1>Prestations</h1>
 </div>
-
 <mat-grid-list cols="3" rowheight="1:1">
 	<mat-grid-tile>
 		<mat-card class="example-card">
@@ -104,7 +159,6 @@
 			</mat-card-content>
 		</mat-card>
 	</mat-grid-tile>
-
 	<mat-grid-tile>
 		<mat-card class="example-card">
 			<div class="text-align">
@@ -118,7 +172,6 @@
 			</mat-card-content>
 		</mat-card>
 	</mat-grid-tile>
-
 	<mat-grid-tile>
 		<mat-card class="example-card">
 			<div class="text-align" style="text-align:center; margin-top:10px;">
@@ -133,13 +186,7 @@
 			</mat-card-content>
 		</mat-card>
 	</mat-grid-tile>
-</mat-grid-list>
-
-
-<!-- Section Prestations End -->
-
-<!-- Section Projets Symfony Start -->
-<mat-grid-list cols="3" rowheight="2:1">
+</mat-grid-list><!-- Section Prestations End --><!-- Section Projets Symfony Start --><mat-grid-list cols="3" rowheight="2:1">
 	<mat-grid-tile>
 		<mat-card class="example-card">
 			<img mat-card-image src="./assets/images/casutilisation.png">
@@ -163,7 +210,6 @@
 			</mat-card-title-group>
 		</mat-card>
 	</mat-grid-tile>
-
 	<mat-grid-tile>
 		<mat-card class="example-card">
 			<img mat-card-image src="./assets/images/diagrammeUML.png">
@@ -174,7 +220,6 @@
 			</mat-card-title-group>
 		</mat-card>
 	</mat-grid-tile>
-
 	<mat-grid-tile>
 		<mat-card class="example-card">
 			<img mat-card-image src="./assets/images/manuelutilisation.png">
@@ -185,7 +230,6 @@
 			</mat-card-title-group>
 		</mat-card>
 	</mat-grid-tile>
-
 	<mat-grid-tile>
 		<mat-card class="example-card">
 			<img mat-card-image src="./assets/images/charte.png">
@@ -196,7 +240,6 @@
 			</mat-card-title-group>
 		</mat-card>
 	</mat-grid-tile>
-
 	<mat-grid-tile>
 		<mat-card class="example-card">
 			<img mat-card-image src="./assets/images/wireframe.png">
@@ -207,13 +250,7 @@
 			</mat-card-title-group>
 		</mat-card>
 	</mat-grid-tile>
-</mat-grid-list>
-
-
-<!-- Section Projets Symfony End -->
-
-<!-- Section Contact Start -->
-<mat-card class="example-card flex" style="background-color: blue; max-width:22rem;">
+</mat-grid-list><!-- Section Projets Symfony End --><!-- Section Contact Start --><mat-card class="example-card flex" style="background-color: blue; max-width:22rem;">
 	<div class="text-align">
 
 
@@ -229,18 +266,9 @@
 			<a [routerLink]="['/contact']" mat-raised-button class="example-spacer m-auto">Contactez-moi</a>
 		</mat-card-actions>
 	</div>
-
-</mat-card>
-
-<!-- Section Contact End -->
-
-<!-- Section Témoignages Start -->
-<div class="text-align">
+</mat-card><!-- Section Contact End --><!-- Section Témoignages Start --><div class="text-align">
 	<h1>Témoignages</h1>
-
 </div>
-
-
 <mat-card class="example-card">
 	<mat-card-title-group>
 
@@ -251,16 +279,12 @@
 		</mat-card-subtitle>
 
 
-		<img mat-card-image src="./assets/images/michele.png">
-	</mat-card-title-group>
+		<img mat-card-image src="./assets/images/michele.png"></mat-card-title-group>
 	<mat-card-content>
-		Oh punaise Cyril je n'en reviens pas !!! Je ne m'attendais pas à quelque chose d'aussi abouti ! J'adore ! Le fond blanc me plaît beaucoup. Est ce que je peux mettre des photos perso à la place des images ? Wouah je suis ravie et demain matin je travaillerai toutes tes questions. Merci de tout cœur 🙏
-	</mat-card-content>
+		Oh punaise Cyril je n'en reviens pas !!! Je ne m'attendais pas à quelque chose d'aussi abouti ! J'adore ! Le fond blanc me plaît beaucoup. Est ce que je peux mettre des photos perso à la place des images ? Wouah je suis ravie et demain matin je travaillerai toutes tes questions. Merci de tout cœur 🙏</mat-card-content>
 	<div class="rating text-secondary">
-		⭐⭐⭐⭐⭐
-	</div>
+		⭐⭐⭐⭐⭐</div>
 </mat-card>
-
 <mat-card class="example-card">
 	<mat-card-title-group>
 
@@ -274,16 +298,10 @@
 		</mat-card-subtitle>
 
 
-		<img mat-card-image src="./assets/images/logoasdec.png">
-	</mat-card-title-group>
+		<img mat-card-image src="./assets/images/logoasdec.png"></mat-card-title-group>
 	<mat-card-content>
-		Hello C'est la moindre des choses pour ce que tu fais à l'association, le webmaster 😉👍 Bonne journée
-
-	</mat-card-content>
+		Hello C'est la moindre des choses pour ce que tu fais à l'association, le webmaster 😉👍 Bonne journée</mat-card-content>
 	<div class="rating text-secondary">
-		⭐⭐⭐⭐⭐
-	</div>
+		⭐⭐⭐⭐⭐</div>
 </mat-card>
-
-
 <!-- Section Témoignages End -->
