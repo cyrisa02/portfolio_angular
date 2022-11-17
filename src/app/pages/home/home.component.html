@@ -4,9 +4,9 @@
 			<mat-card-title-group>
 				<mat-card-subtitle>Bonjour, je suis
 				</mat-card-subtitle>
-				<mat-card-title style="margin-bottom: 30px; color:blue;">Cyril Gourdon</mat-card-title>
+				<mat-card-title style="color:blue;">Cyril Gourdon</mat-card-title>
 
-				<mat-card-title style="margin-bottom: 30px; color:blue;">DEVELOPPEUR BACK-END SYMFONY-ANGULAR</mat-card-title>
+				<mat-card-title style="color:blue;">DEVELOPPEUR BACK-END SYMFONY-ANGULAR</mat-card-title>
 
 
 				<img mat-card-image src="./assets/images/profile.JPG" style="max-width:20rem; border-radius:50%;">
@@ -19,15 +19,15 @@
 			</mat-card-actions>
 		</mat-card>
 		<!-- Section About -->
-		<div class="text-align" style="text-align:center; margin-top:10px;">
+		<div class="text-align">
 			<h1>A propos</h1>
 		</div>
 
-		<mat-grid-list cols="2" rowheight="1:1">
+		<mat-grid-list cols="2" rowheight="1:2">
 			<mat-grid-tile>
 				<mat-card class="example-card">
 					<mat-card-title-group>
-						<mat-card-title style="margin-bottom: 30px; ">Grâce au framework Symfony je peux vous apporter et personnaliser de nouvelles fonctionnalités dans votre métier en respectant les critères de sécurité et de fiabilité. Ce qui impliquera de moindres coûts de maintenance.</mat-card-title>
+						<mat-card-title>Grâce au framework Symfony je peux vous apporter et personnaliser de nouvelles fonctionnalités dans votre métier en respectant les critères de sécurité et de fiabilité. Ce qui impliquera de moindres coûts de maintenance.</mat-card-title>
 
 					</mat-card-title-group>
 					<mat-card-content>
@@ -35,7 +35,7 @@
 
 					</mat-card-content>
 					<mat-card-actions>
-						<a href="/assets/images/CYRILGOURDON.pdf" target="_blank" mat-raised-button class="example-spacer" color="primary" style="margin-bottom:2rem;">Mon  CV</a>
+						<a href="/assets/images/CYRILGOURDON.pdf" target="_blank" mat-raised-button class="example-spacer" color="primary">Mon  CV</a>
 
 						<div class="social-links">
 							<a href="https://www.linkedin.com/in/cyril-gourdon-web-developpeur-symfony-angular/" class="text-dark me-2 fs-5">
@@ -76,9 +76,10 @@
 
 		<!-- Section Prestations Start -->
 
-		<div class="text-align" style="text-align:center; margin-top:10px;">
+		<div class="text-align">
 			<h1>Prestations</h1>
 		</div>
+
 		<mat-grid-list cols="3" rowheight="1:1">
 			<mat-grid-tile>
 				<mat-card class="example-card">
@@ -96,7 +97,7 @@
 
 			<mat-grid-tile>
 				<mat-card class="example-card">
-					<div class="text-align" style="text-align:center; margin-top:10px;">
+					<div class="text-align">
 						<fa-icon [icon]="faLightbulb" class="fa-2xl"></fa-icon>
 						<mat-card-title-group style=" margin-top:10px;">
 							<mat-card-title style="margin-bottom: 30px; color:blue;">AGILE/SCRUM</mat-card-title>
@@ -131,74 +132,69 @@
 		<mat-grid-list cols="3" rowheight="2:1">
 			<mat-grid-tile>
 				<mat-card class="example-card">
-					<img mat-card-image src="./assets/images/casutilisation.png" style="max-width:20rem; ">
+					<img mat-card-image src="./assets/images/casutilisation.png">
 					<mat-card-title-group>
-						<mat-card-title style="margin-bottom: 30px; color:blue;">Documentation technique</mat-card-title>
-					</mat-card-title-group>
-					<mat-card-content>
-						Lien
-					</mat-card-content>
-				</mat-card>
-			</mat-grid-tile>
-			<mat-grid-tile>
-				<mat-card class="example-card">
-					<img mat-card-image src="./assets/images/youtube.png" style="max-width:20rem; ">
-					<mat-card-title-group>
-						<mat-card-title style="margin-bottom: 30px; color:blue;">Vidéos De Fonctionnement</mat-card-title>
-					</mat-card-title-group>
-					<mat-card-content>Lien
-					</mat-card-content>
-				</mat-card>
-			</mat-grid-tile>
+						<mat-card-title style="color:blue;">
+							<a href="https://github.com/cyrisa02/asdec/tree/main/documentation_technique">Documentation technique</a>
+						</mat-card-title>
 
+
+					</mat-card-title-group>
+					<mat-card-content></mat-card-content>
+				</mat-card>
+			</mat-grid-tile>
 			<mat-grid-tile>
 				<mat-card class="example-card">
-					<img mat-card-image src="./assets/images/diagrammeUML.png" style="max-width:20rem; ">
+					<img mat-card-image src="./assets/images/youtube.png">
 					<mat-card-title-group>
-						<mat-card-title style="margin-bottom: 30px; color:blue;">Diagrammes UML</mat-card-title>
+						<mat-card-title>
+							<a href="https://www.youtube.com/channel/UCwx0nLuqWHxVly5v_u-ll4Q/videos" class="text-secondary text-decoration-none">Vidéos De Fonctionnement</a>
+						</mat-card-title>
 					</mat-card-title-group>
-					<mat-card-content>Lien
-					</mat-card-content>
 				</mat-card>
 			</mat-grid-tile>
 
 			<mat-grid-tile>
 				<mat-card class="example-card">
-					<img mat-card-image src="./assets/images/manuelutilisation.png" style="max-width:20rem; ">
+					<img mat-card-image src="./assets/images/diagrammeUML.png">
 					<mat-card-title-group>
-						<mat-card-title style="margin-bottom: 30px; color:blue;">Manuel D'utilisation</mat-card-title>
-
-
+						<mat-card-title style="margin-bottom: 30px; color:blue;">
+							<a href="https://github.com/cyrisa02/diagrammes-UML" class="text-secondary text-decoration-none">Diagrammes UML</a>
+						</mat-card-title>
 					</mat-card-title-group>
-					<mat-card-content>
-						Lien
-
-					</mat-card-content>
 				</mat-card>
 			</mat-grid-tile>
 
 			<mat-grid-tile>
 				<mat-card class="example-card">
-					<img mat-card-image src="./assets/images/charte.png" style="max-width:20rem; ">
+					<img mat-card-image src="./assets/images/manuelutilisation.png">
 					<mat-card-title-group>
-						<mat-card-title style="margin-bottom: 30px; color:blue;">Charte Graphique</mat-card-title>
+						<mat-card-title style="margin-bottom: 30px; color:blue;">
+							<a href="https://github.com/cyrisa02/asdec/tree/main/d_manuel_d_utilisation" class="text-secondary text-decoration-none">Manuel D'utilisation</a>
+						</mat-card-title>
 					</mat-card-title-group>
-					<mat-card-content>
-						Lien
-
-					</mat-card-content>
 				</mat-card>
 			</mat-grid-tile>
 
 			<mat-grid-tile>
 				<mat-card class="example-card">
-					<img mat-card-image src="./assets/images/wireframe.png" style="max-width:20rem; ">
+					<img mat-card-image src="./assets/images/charte.png">
 					<mat-card-title-group>
-						<mat-card-title style="margin-bottom: 30px; color:blue;">Wireframes</mat-card-title>
+						<mat-card-title style="margin-bottom: 30px; color:blue;">
+							<a href="https://github.com/cyrisa02/asdec/tree/main/d_charte_graphique" class="text-secondary text-decoration-none">Charte Graphique</a>
+						</mat-card-title>
 					</mat-card-title-group>
-					<mat-card-content>
-						Lien
-					</mat-card-content>
+				</mat-card>
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-card class="example-card">
+					<img mat-card-image src="./assets/images/wireframe.png">
+					<mat-card-title-group>
+						<mat-card-title style="margin-bottom: 30px; color:blue;">
+							<a href="https://github.com/cyrisa02/asdec/tree/main/d_charte_graphique" class="text-secondary text-decoration-none">Wireframes</a>
+						</mat-card-title>
+					</mat-card-title-group>
 				</mat-card>
 			</mat-grid-tile>
 		</mat-grid-list>
@@ -207,17 +203,17 @@
 		<!-- Section Projets Symfony End -->
 
 		<!-- Section Contact Start -->
-		<mat-card class="example-card flex" style="background-color: blue;">
-			<div class="text-align" style="text-align:center; margin-top:10px;">
+		<mat-card class="example-card flex" style="background-color: blue; max-width:22rem;">
+			<div class="text-align">
 
 
-				<mat-card-content class="m-auto" style="margin-bottom: 30px; color:white;">
+				<mat-card-content class="m-auto">
 
 					Vous avez des projets?
 				</mat-card-content>
 				<mat-card-title-group class="m-auto">
 
-					<mat-card-title style="margin-bottom: 30px; color:white;">Je suis prêt à vous accompagner</mat-card-title>
+					<mat-card-title style="color:white;">Je suis prêt à vous accompagner</mat-card-title>
 				</mat-card-title-group>
 				<mat-card-actions>
 					<a [routerLink]="['/contact']" mat-raised-button class="example-spacer m-auto">Contactez-moi</a>
@@ -229,7 +225,7 @@
 		<!-- Section Contact End -->
 
 		<!-- Section Témoignages Start -->
-		<div class="text-align" style="text-align:center; margin-top:10px;">
+		<div class="text-align">
 			<h1>Témoignages</h1>
 
 		</div>
@@ -238,14 +234,14 @@
 		<mat-card class="example-card">
 			<mat-card-title-group>
 
-				<mat-card-title style="margin-bottom: 30px; color:blue;">Michèle Gilles</mat-card-title>
+				<mat-card-title style="color:blue;">Michèle Gilles</mat-card-title>
 				<mat-card-subtitle>Responsable de "Au Coeur de Soi"
 				</mat-card-subtitle>
 				<mat-card-subtitle>Michèle m'a fait confiance pour la réalisation de son site vitrine que j'ai réalisé avec Wordpress.
 				</mat-card-subtitle>
 
 
-				<img mat-card-image src="./assets/images/michele.png" style="max-width:10rem; border-radius:50%;">
+				<img mat-card-image src="./assets/images/michele.png">
 			</mat-card-title-group>
 			<mat-card-content>
 				Oh punaise Cyril je n'en reviens pas !!! Je ne m'attendais pas à quelque chose d'aussi abouti ! J'adore ! Le fond blanc me plaît beaucoup. Est ce que je peux mettre des photos perso à la place des images ? Wouah je suis ravie et demain matin je travaillerai toutes tes questions. Merci de tout cœur 🙏
@@ -258,7 +254,7 @@
 		<mat-card class="example-card">
 			<mat-card-title-group>
 
-				<mat-card-title style="margin-bottom: 30px; color:blue;">Nicolas Faivre</mat-card-title>
+				<mat-card-title>Nicolas Faivre</mat-card-title>
 
 				<mat-card-subtitle>Trésorier de l'ASDEC
 
@@ -268,7 +264,7 @@
 				</mat-card-subtitle>
 
 
-				<img mat-card-image src="./assets/images/logoasdec.png" style="max-width:8rem; border-radius:50%;">
+				<img mat-card-image src="./assets/images/logoasdec.png">
 			</mat-card-title-group>
 			<mat-card-content>
 				Hello C'est la moindre des choses pour ce que tu fais à l'association, le webmaster 😉👍 Bonne journée
