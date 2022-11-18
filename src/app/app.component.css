@@ -15,3 +15,7 @@
 .m-auto{
     margin: auto;
 }
+
+.example-spacer:hover {
+    color: white;
+}
