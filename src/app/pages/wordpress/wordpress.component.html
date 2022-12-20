@@ -10,7 +10,8 @@
 		<!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
 
 
-		<div *ngFor='let item of serviceApi.list' style="text-align:center">
+		<div *ngFor='let item of serviceApi.list.slice().reverse()' style="text-align:center">
+
 
 			<div class="" *ngIf="item.isWordpress">
 				<mat-card class="example-card">
@@ -29,16 +30,13 @@
 
 
 						<img mat-card-lg-image [src]="item.urlpicture
-																																			" style="margin-bottom: 20px;width:18rem; ">
+																																																	" style="margin-bottom: 20px;width:18rem; ">
 
 
 					</mat-card-title-group>
 					<mat-card-content>
 						{{ item.description }}
 
-						<mat-card-content>
-							{{ item.urlpicture }}
-						</mat-card-content>
 
 					</mat-card-content>
 					<mat-card-subtitle><img src=" ./assets/images/medaillon.png" alt=" cyril Gourdon" style=" max-width:3rem; border-radius:50%;">- Cyril Gourdon -
